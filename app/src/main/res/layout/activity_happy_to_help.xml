@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.getfreerecharge.trainschedule.activities.HappyToHelp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/swachbharat" />
+
+            <TextView
+                android:id="@+id/homeactionbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Happy to Help"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hometitlequote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="use dustbin and be healthy"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hometitlequoteone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="डस्टबिन का उपयोग करें और स्वस्थ रहो"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="410dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/clss"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Classes of Accomodation"
+                            android:textColor="@color/quotacolor"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/first"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="1A - First class Air-conditioned"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/second"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="2A - Air-conditioned 2-tier sleeper"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="FC - First Class"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/third"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="3A - Air-conditioned 3-tier sleeper"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/cc"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="CC - Air-conditioned chair car"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/sl"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="SL - Sleeper class"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ssl"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="2S - Second-class Sitting"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="610dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/quota"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Ticket Quotas"
+                            android:textColor="@color/tocolr"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/gn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="GN - General"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ld"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="LD - Ladies"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ho"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="HO - High Official / Headquarters"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/df"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="DF - Defence"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/rac"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="RC (RAC) - Reservation against Cancellation"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/oss"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="OS - Out-station"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/rs"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="RS - Road-side"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ph"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="PH - Parliament House"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="FT - Foreign Tourist"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="DP - Duty Pass"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/hp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:text="HP - Handicapped"
+                            android:textColor="@color/namecolor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

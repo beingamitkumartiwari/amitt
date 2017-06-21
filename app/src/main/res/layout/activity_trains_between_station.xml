@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.getfreerecharge.trainschedule.activities.TrainsBetweenStation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/swachbharat" />
+
+            <TextView
+                android:id="@+id/homeactionbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Train Between Station"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hometitlequote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="use dustbin and be healthy"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hometitlequoteone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="डस्टबिन का उपयोग करें और स्वस्थ रहो"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.victor.loading.book.BookLoading
+            android:id="@+id/bookloading"
+            android:layout_width="150dp"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/errortext"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/errortext"
+            android:textColor="@color/fromcolor"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter source station name"
+                android:text=""
+                android:textColor="#121212" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter destination station name"
+                android:text=""
+                android:textColor="#121212" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <EditText
+                    android:id="@+id/input_date"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Select date from calender"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/date_picker"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/calendars_icon" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/get_seat_availability"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="17sp"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:text="Trains  Between  Station"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/train_between_station"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

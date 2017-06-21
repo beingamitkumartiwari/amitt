@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#595daa</color>
+    <color name="colorPrimaryDark">#464986</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="nocolor">#595daa</color>
+    <color name="namecolor">#464986</color>
+    <color name="fromcolor">#69cc69</color>
+    <color name="tocolr">#54a354</color>
+    <color name="quotacolor">#fe5e52</color>
+    <color name="faircolor">#f38c25</color>
+
+    <color name="textcolor">#808080</color>
+
+    <color name="odd">#f1f1f1</color>
+    <color name="even">#85baff</color>
+
+    <color name="book_loading_background">#ffffff</color>
+    <color name="book_loading_book">#464986</color>
+    <color name="book_loading_page">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

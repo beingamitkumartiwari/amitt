@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/swachbharat" />
+
+            <TextView
+                android:id="@+id/homeactionbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Train Schedule"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/moreapps"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_gravity="center|right"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/setting" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hometitlequote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="happy journey safe journey"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hometitlequoteone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="खुश यात्रा सुरक्षित यात्रा"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/pnrstatus"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/train" />
+
+                        <TextView
+                            android:id="@+id/textpnr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Pnr Status"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/fairenquiry"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/fair" />
+
+                        <TextView
+                            android:id="@+id/textfair"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Fair Enquiry"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/trainroute"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/train" />
+
+                        <TextView
+                            android:id="@+id/textroute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Train Route"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/seatavailability"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/seat" />
+
+                        <TextView
+                            android:id="@+id/textseat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Seat Availability"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/trainbwstation"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/train" />
+
+                        <TextView
+                            android:id="@+id/textbetween"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Train Between Station"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/trainarrivalatstation"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/arrival" />
+
+                        <TextView
+                            android:id="@+id/textarrival"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Train Arrival at Station"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/cancelledtrain"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/train" />
+
+                        <TextView
+                            android:id="@+id/textcancle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Cancel Train"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/rescheduledtrain"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/train" />
+
+                        <TextView
+                            android:id="@+id/textrescheduled"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Rescheduled Train"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/scheduleoftrain"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/seat" />
+
+                        <TextView
+                            android:id="@+id/textschedule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Book Tickets"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/helpyou"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ui_main_shape"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/help" />
+
+                        <TextView
+                            android:id="@+id/helptext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:text="Happy to Help You"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

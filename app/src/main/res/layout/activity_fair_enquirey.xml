@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.getfreerecharge.trainschedule.activities.FairEnquirey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/swachbharat" />
+
+            <TextView
+                android:id="@+id/homeactionbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="70dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Fair Enquiry"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hometitlequote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="use dustbin and be healthy"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hometitlequoteone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="डस्टबिन का उपयोग करें और स्वस्थ रहो"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.victor.loading.book.BookLoading
+            android:id="@+id/bookloading"
+            android:layout_width="150dp"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/errortext"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/errortext"
+            android:textColor="@color/fromcolor"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter here train name"
+                android:text=""
+                android:textColor="#121212" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter here source station"
+                android:text=""
+                android:textColor="#121212" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Enter here destination station"
+                android:text=""
+                android:textColor="#121212" />
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="17dp"-->
+            <!--android:layout_marginRight="17dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--tools:layout_editor_absoluteX="8dp"-->
+            <!--tools:layout_editor_absoluteY="0dp">-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/input_train_source"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Enter Source Station"-->
+            <!--android:inputType="textCapCharacters"-->
+            <!--android:maxLength="10" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="17dp"-->
+            <!--android:layout_marginRight="17dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--tools:layout_editor_absoluteX="8dp"-->
+            <!--tools:layout_editor_absoluteY="0dp">-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/input_train_dest"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Enter Destination Station"-->
+            <!--android:inputType="textCapCharacters"-->
+            <!--android:maxLength="10" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="5dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <EditText
+                    android:id="@+id/input_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter age"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="5dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <EditText
+                    android:id="@+id/input_train_quota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter quota"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="10" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <EditText
+                        android:id="@+id/input_date"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Select date from calender"
+                        android:inputType="number"
+                        android:maxLength="10" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/date_picker"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/calendars_icon" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/get_fare"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="17sp"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="Fare Enquiry"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/train_nu"
+                        android:layout_width="67dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="12000"
+                        android:textColor="@color/nocolor" />
+
+                    <TextView
+                        android:id="@+id/train_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Rajdhani Express"
+                        android:textColor="@color/namecolor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/train_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Allahabad"
+                        android:textColor="@color/fromcolor" />
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="to" />
+
+                    <TextView
+                        android:id="@+id/train_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Delhi"
+                        android:textColor="@color/tocolr" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="0dp">
+
+                <TextView
+                    android:id="@+id/train_quota"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tatkal"
+                    android:textColor="@color/quotacolor"
+                    android:textSize="18sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

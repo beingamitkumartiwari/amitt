@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="191dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/station_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="AZAMGHAR"
+                    android:textColor="@color/namecolor" />
+
+                <TextView
+                    android:id="@+id/station_code"
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/nocolor"
+                    android:text="AZM" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textarrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ARR"
+                    android:textColor="@color/nocolor" />
+
+                <TextView
+                    android:id="@+id/arrival_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/quotacolor"
+                    android:text="12:30" />
+
+                <TextView
+                    android:id="@+id/textdep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DEP"
+                    android:textColor="@color/namecolor" />
+
+                <TextView
+                    android:id="@+id/departure_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12:32"
+                    android:textColor="@color/faircolor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/texthalt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="HALT"
+                    android:textColor="@color/namecolor" />
+
+                <TextView
+                    android:id="@+id/halt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/tocolr"/>
+
+                <TextView
+                    android:id="@+id/textplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PLATFORM"
+                    android:textColor="@color/nocolor" />
+
+                <TextView
+                    android:id="@+id/platform_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/tocolr"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textdist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DISTANCE"
+                    android:textColor="@color/nocolor" />
+
+
+                <TextView
+                    android:id="@+id/distance_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="200km"
+                    android:textColor="@color/fromcolor"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    /
+</LinearLayout>
